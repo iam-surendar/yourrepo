@@ -55,7 +55,7 @@ pipeline {
                         echo "Deploying to ECS..."
                         aws ecs update-service \
                           --cluster calculator-cluster \
-                          --service calculator-service \
+                          --service calculator-task-service-tiabpha1 \
                           --force-new-deployment \
                           --region ap-south-1
                     '''
